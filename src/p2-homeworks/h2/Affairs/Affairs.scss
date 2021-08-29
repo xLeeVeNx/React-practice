@@ -1,0 +1,732 @@
+.cards {
+  margin: 50px 0;
+
+  font-family: cursive;
+
+  color: #FFFFFF;
+
+
+  &__items {
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 570px;
+  }
+
+  .cards__item-button {
+    padding: 10px;
+    margin: 30px auto 50px;
+
+    display: block;
+    max-width: 150px;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    background-color: transparent;
+
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: transparent;
+      color: #FFFFFF;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    padding: 0 10px;
+    margin-bottom: 50px;
+
+    max-width: 300px;
+    width: 100%;
+
+    background-color: #FFFFFF;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      height: 200px;
+
+      clip-path: polygon(0 0, 100% 0, 100% 54%, 0% 100%);
+    }
+
+    &--yellow {
+      &::before {
+        background-color: #F9AB01;
+      }
+
+      border: 2px solid #F9AB01;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        height: 20px;
+
+        background-color: #F9AB01;
+      }
+      
+      .cards__item-button {
+        border-color: #F9AB01;
+        color: #F9AB01;
+
+        &:hover {
+          background-color: #F9AB01;
+        }
+      }
+
+      .cards__pentagon {
+        margin: 0 auto;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 170px;
+
+        background-color: #FA8E01;
+
+        clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+
+        span {
+          position: relative;
+          z-index: 1;
+
+          font-size: 34px;
+
+          color: #F9AB01;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 0;
+          z-index: 0;
+
+          width: 166px;
+          height: 166px;
+
+          background-color: #FFFFFF;
+
+          clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+        }
+      }
+
+      .cards__desc {
+        margin: 0 auto;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+
+        background-color: #FA8E01;
+
+        clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+
+        span {
+          position: relative;
+          z-index: 1;
+
+          font-size: 16px;
+
+          color: #F9AB01;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 0;
+          z-index: 0;
+
+          width: 86px;
+          height: 86px;
+
+          background-color: #FFFFFF;
+
+          clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+        }
+      }
+    }
+
+    &--purple {
+      &::before {
+        background-color: #BE4F91;
+      }
+
+      border: 2px solid #BE4F91;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        height: 20px;
+
+        background-color: #BE4F91;
+      }
+
+      .cards__item-button {
+        border-color: #BE4F91;
+        color: #BE4F91;
+
+        &:hover {
+          background-color: #BE4F91;
+        }
+      }
+
+      .cards__pentagon {
+        margin: 0 auto;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 170px;
+
+        background-color: #BE4F91;
+
+        clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+
+        span {
+          position: relative;
+          z-index: 1;
+
+          font-size: 34px;
+
+          color: #BE4F91;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 0;
+          z-index: 0;
+
+          width: 166px;
+          height: 166px;
+
+          background-color: #FFFFFF;
+
+          clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+        }
+      }
+
+      .cards__desc {
+        margin: 0 auto;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+
+        background-color: #BE4F91;
+
+        clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+
+        span {
+          position: relative;
+          z-index: 1;
+
+          font-size: 16px;
+
+          color: #BE4F91;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 0;
+          z-index: 0;
+
+          width: 86px;
+          height: 86px;
+
+          background-color: #FFFFFF;
+
+          clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+        }
+      }
+    }
+
+    &--blue {
+      &::before {
+        background-color: #0192AF;
+      }
+
+      border: 2px solid #0192AF;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        height: 20px;
+
+        background-color: #0192AF;
+      }
+
+      .cards__item-button {
+        border-color: #0192AF;
+        color: #0192AF;
+
+        &:hover {
+          background-color: #0192AF;
+        }
+      }
+
+      .cards__pentagon {
+        margin: 0 auto;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 170px;
+
+        background-color: #0192AF;
+
+        clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+
+        span {
+          position: relative;
+          z-index: 1;
+
+          font-size: 34px;
+
+          color: #0192AF;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 0;
+          z-index: 0;
+
+          width: 166px;
+          height: 166px;
+
+          background-color: #FFFFFF;
+
+          clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+        }
+      }
+
+      .cards__desc {
+        margin: 0 auto;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+
+        background-color: #0192AF;
+
+        clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+
+        span {
+          position: relative;
+          z-index: 1;
+
+          font-size: 16px;
+
+          color: #0192AF;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 0;
+          z-index: 0;
+
+          width: 86px;
+          height: 86px;
+
+          background-color: #FFFFFF;
+
+          clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+        }
+      }
+    }
+
+    &--red {
+      &::before {
+        background-color: #EB4C42;
+      }
+
+      border: 2px solid #EB4C42;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        height: 20px;
+
+        background-color: #EB4C42;
+      }
+
+      .cards__item-button {
+        border-color: #EB4C42;
+        color: #EB4C42;
+
+        &:hover {
+          background-color: #EB4C42;
+        }
+      }
+
+      .cards__pentagon {
+        margin: 0 auto;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 170px;
+
+        background-color: #EB4C42;
+
+        clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+
+        span {
+          position: relative;
+          z-index: 1;
+
+          font-size: 34px;
+
+          color: #EB4C42;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 0;
+          z-index: 0;
+
+          width: 166px;
+          height: 166px;
+
+          background-color: #FFFFFF;
+
+          clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+        }
+      }
+
+      .cards__desc {
+        margin: 0 auto;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+
+        background-color: #EB4C42;
+
+        clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+
+        span {
+          position: relative;
+          z-index: 1;
+
+          font-size: 16px;
+
+          color: #EB4C42;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 0;
+          z-index: 0;
+
+          width: 86px;
+          height: 86px;
+
+          background-color: #FFFFFF;
+
+          clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+        }
+      }
+    }
+
+    &--green {
+      &::before {
+        background-color: #64BC44;
+      }
+
+      border: 2px solid #64BC44;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        height: 20px;
+
+        background-color: #64BC44;
+      }
+
+      .cards__item-button {
+        border-color: #64BC44;
+        color: #64BC44;
+
+        &:hover {
+          background-color: #64BC44;
+        }
+      }
+
+      .cards__pentagon {
+        margin: 0 auto;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 170px;
+
+        background-color: #64BC44;
+
+        clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+
+        span {
+          position: relative;
+          z-index: 1;
+
+          font-size: 34px;
+
+          color: #64BC44;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 0;
+          z-index: 0;
+
+          width: 166px;
+          height: 166px;
+
+          background-color: #FFFFFF;
+
+          clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+        }
+      }
+
+      .cards__desc {
+        margin: 0 auto;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+
+        background-color: #64BC44;
+
+        clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+
+        span {
+          position: relative;
+          z-index: 1;
+
+          font-size: 16px;
+
+          color: #64BC44;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 0;
+          z-index: 0;
+
+          width: 86px;
+          height: 86px;
+
+          background-color: #FFFFFF;
+
+          clip-path: polygon(51% 0, 94% 25%, 94% 75%, 51% 100%, 6% 74%, 6% 24%);
+        }
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+
+    margin: 10px 0 0 0;
+
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+
+    text-transform: uppercase;
+    opacity: 0.7;
+
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    padding: 0 0 0 10px;
+
+    color: grey;
+
+    list-style: none;
+  }
+
+  &__list-item {
+    position: relative;
+
+    padding: 0 0 0 30px;
+    font-weight: 400;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 20px;
+      height: 20px;
+
+
+      background-image: url("https://e7.pngegg.com/pngimages/878/377/png-clipart-check-mark-computer-icons-others-miscellaneous-angle.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      border-radius: 50%;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__button {
+    padding: 20px 0;
+    margin-bottom: 20px;
+
+    max-width: 250px;
+    width: 100%;
+
+    font-size: 20px;
+
+    background-color: #2B2855;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
